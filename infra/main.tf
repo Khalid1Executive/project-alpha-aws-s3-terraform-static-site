@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "site" {
-  bucket = var.bucket_name
+  bucket        = var.bucket_name
   force_destroy = true
 }
 resource "aws_s3_bucket_website_configuration" "site" {
@@ -10,7 +10,7 @@ resource "aws_s3_bucket_website_configuration" "site" {
   error_document {
     key = "index.html"
   }
-} 
+}
 resource "aws_s3_bucket_public_access_block" "site" {
   bucket                  = aws_s3_bucket.site.id
   block_public_acls       = false
