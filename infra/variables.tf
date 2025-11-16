@@ -11,9 +11,5 @@ variable "bucket_name" {
 variable "domain_name" {
   description = "The domain name for the certificate"
   type        = string
-}
-
-variable "zone_id" {
-  description = "The Route53 hosted zone ID for the domain"
-  type        = string
+  default = "khalid1site.com"
 }
