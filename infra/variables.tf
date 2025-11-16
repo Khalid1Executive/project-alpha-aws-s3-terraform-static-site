@@ -13,3 +13,6 @@ variable "domain_name" {
   type        = string
   default = "khalid1site.com"
 }
+variable "domain_name" {
+default = "khalid1site.com" // Change this to your personal domain name of choice
+}
